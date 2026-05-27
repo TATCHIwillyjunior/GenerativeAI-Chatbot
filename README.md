@@ -1,6 +1,7 @@
-# Generative AIs & Chatbots, for fun and profit
+## Generative AIs & Chatbots, for fun and profit
 
-branches
+# Branches
+TODO create your branch example bellow :
 
 - feat/willy_genAI
 - feat/fred_backend_api
