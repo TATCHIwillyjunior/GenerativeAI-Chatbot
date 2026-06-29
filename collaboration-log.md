@@ -14,3 +14,7 @@
 | 2026-06-28 | Fred | i added JWT authentication | i needed to protect the analyze-sound and explain-noise routes from unauthenticated access in the system | feat/fred_backend_api | i added BACKEND/src/auth.js with loginHandler and authMiddleware | the JWT token protected routes reject requests without valid token |
 
 | 2026-06-28 | Fred | i added an audio feature extraction | i needed to read duration, sample rate and channels from uploaded audio using ffmpeg/ffprobe | feat/fred_backend_api | i added BACKEND/src/audioProcessor.js | the backend can probe uploaded audio files and return structured features |
+
+| 2026-06-28 | Fred | i added a GenAI noise explanation service | i needed to send audio features + context to Groq and get a structured explanation back | feat/fred_backend_api | i added BACKEND/src/genAIService.js | the backend generates noise explanations with risk level from Groq LLaMA-3 |
+
+| 2026-06-28 | Fred | i added Groq vs Gemini benchmark script | i wanted to compare latency and output quality between the two models for the same prompt | feat/fred_backend_api | i added BACKEND/src/benchmark.js | the benchmark script runs both models and logs latency or theoutput for comparison |
